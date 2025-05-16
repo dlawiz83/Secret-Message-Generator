@@ -55,19 +55,19 @@ $deleteStmt->execute();
 <body>
   <div class="message-container">
   <?php if (!empty($message)): ?>
-    <h2>🔐 Your Secret Message:</h2>
+    <h2> Your Secret Message:</h2>
     <div class="message-box">
   <p id="secretMessage"><?= htmlspecialchars($message) ?></p>
   <button id="copyBtn">Copy to Clipboard</button>
   <span id="copyStatus" style="color: green; display: none;">Copied!</span>
 </div>
      <?php elseif ($expired): ?>
-      <p>⏳ This secret message has expired or was already viewed.</p>
+      <p> This secret message has expired or was already viewed.</p>
 <?php elseif ($invalid): ?>
-      <p>❌ Invalid or missing secret token. Please check your link.</p>
+      <p> Invalid or missing secret token. Please check your link.</p>
 
   <?php else: ?>
-    <p>❌ This message has already been viewed or doesn't exist.</p>
+    <p> This message has already been viewed or doesn't exist.</p>
   <?php endif; ?>
 </div>
 <script>
