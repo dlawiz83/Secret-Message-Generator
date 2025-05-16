@@ -11,7 +11,7 @@
 <body>
 
     <div class="container">
-        <h1>🔐 Secret Message Generator</h1>
+        <h1> Secret Message Generator</h1>
         <p>Type a private message and get a one-time viewable secret link.</p>
 
         <form action="create.php" method="post">
