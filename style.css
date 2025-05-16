@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    /* Add horizontal padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.message-box {
+    background-color: #f0f4ff;
+    border: 1px solid #ccc;
+    border-left: 5px solid #007bff;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    word-wrap: break-word;
+    /* Break long words */
+    overflow-wrap: break-word;
+    /* Break long URLs */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-box a {
+    color: #007bff;
+    text-decoration: none;
+    word-break: break-all;
+    /* Break long links */
+}
+
+.message-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.message-container h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.message-box button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.message-box button:hover {
+    background-color: #218838;
+}
+
+#copyStatus {
+    margin-left: 10px;
+    font-weight: bold;
+}
