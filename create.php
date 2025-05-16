@@ -6,9 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['generate'])) {
     $message = trim($_POST['message']);
 
     if (empty($message)) {
-        $messageBox = "<div class='message-box error'>❌ Message cannot be empty.</div>";
+        $messageBox = "<div class='message-box error'> Message cannot be empty.</div>";
     } elseif (strlen($message) > 500) {
-        $messageBox = "<div class='message-box error'>❌ Message too long! Please limit to 500 characters.</div>";
+        $messageBox = "<div class='message-box error'> Message too long! Please limit to 500 characters.</div>";
     } else {
         $token = bin2hex(random_bytes(32));
         $db = new Database();
@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['generate'])) {
 
         if ($stmt->affected_rows > 0) {
             $link = "https://localhost/secret/secret-message-app/view.php?token=" . $token;
-            $messageBox = "<div class='message-box success'>🎉 Secret link: <a href='$link'>$link</a></div>";
+            $messageBox = "<div class='message-box success'> Secret link: <a href='$link'>$link</a></div>";
         } else {
-            $messageBox = "<div class='message-box error'>❌ Failed to save message.</div>";
+            $messageBox = "<div class='message-box error'> Failed to save message.</div>";
         }
     }
 }
