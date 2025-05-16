@@ -26,3 +26,7 @@ This project helped me understand:
 - Handling URL parameters safely
 - Implementing time-based cleanup logic in SQL
 - Frontend-backend integration using PHP and MySQL
+
+## 🖼️ Preview
+
+![Secret Message Screenshot](secret.png)
